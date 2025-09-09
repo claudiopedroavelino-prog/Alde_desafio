@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Desafio da Alde</title>
+  <link rel="stylesheet" href="../static/css/style.css">
+</head>
+<body>
+<b style="display: none;" id="mostrar">{{mostrar}}</b>
+  <header>
+        <div class="caxa">
+          <li class="l1" onclick="inicio()">Alde-On Future Tech</li>
+          <div class="circulo"></div>
+        </div>
+        <nav>
+          <li onclick="login()">Login</li>
+          <li onclick="registro()">Registro</li>
+
+        </nav>
+  </header>
+
+  <section>
+
+    <form action="/Login" method="post" class="login">
+
+      <h1>Login</h1>
+      <input type="text" placeholder="Telefone" name="telefone" id="telefone" required>
+      <input type="password" placeholder="Senha" name="senha" id="senha" required>
+      <button>Entrar</button>
+
+    </form>
+
+    <form action="/registro" method="post" class="Registro">
+
+      <h1>Registro</h1>
+      <input type="text" placeholder="Digite seu nome" name="nome" id="nome" required>
+      <input type="text" placeholder="Digite seu apelido" name="apelido" id="apelido" required>
+      <input type="text" placeholder="Digite seu Terminal" name="telefone" id="apelido" required>
+      <input type="password" placeholder="digite sua senha" name="senha" id="senha" required>
+      <button>Registrar</button>
+
+    </form>
+
+    <div class="ver">
+      <div class="menu">
+        <li class="l">ID</li>
+        <li class="l">NOME</li>
+        <li class="l">APELIDO</li>
+        <li class="l">SENHA</li>
+        <li class="l">TELEFONE</li>
+      </div>
+
+      <div class="conteiner">
+        {% for x in obter %}
+        <div class="dados">
+          <li class="user">{{x[0]}}</li>
+          <li class="user">{{x[1]}}</li>
+          <li class="user">{{x[2]}}</li>
+          <li class="user">{{x[4]}}</li>
+          <li class="user">{{x[3]}}</li>
+        </div>
+        {% endfor %}
+
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <script src="../static/main.js"></script>
+</body>
+</html>

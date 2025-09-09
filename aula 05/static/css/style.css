@@ -1,0 +1,226 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-shadow: 0;
+    list-style: none;
+    user-select: none;
+    text-decoration: none;
+    font-family: 'Segoe UI';
+}
+body { 
+    margin: 0; 
+    height: 100vh; 
+    display: flex; 
+    flex-direction: column; 
+    background-color: #f1f1f1;
+
+}
+header{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 10vh;
+    background-color:darkcyan;
+}
+header nav{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 40%;
+    height: 100%;
+
+}
+header nav li{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    width: 100px;
+    height: 7vh;
+    border-radius: 5px;
+    background-color: #1f1f1f;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+
+}
+header nav li:hover{
+    transition: .3s ease-in-out;
+    background-color:#fff;
+    color: #1f1f1f;
+
+}
+header nav li:active{
+    background-color: #1f1f1f;
+    color: #fff;
+}
+.l1{
+    color: #fff;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+.login{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+    height: 50vh;
+    border: 0px solid red;
+    margin: 4% auto;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0px 0px 5px 1px #d2d2d2;
+}
+.login input{
+    
+    border-radius: 5px;
+    padding-left: 5%;
+    margin-top: 2%;
+    width: 70%;
+    height: 7vh;
+    outline: none;
+    border: 1px solid #000;
+
+}
+.login button{
+    width: 75%;
+    height: 7vh;
+    background-color: #1f1f1f;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 2%;
+    border: 0px;
+    border-radius: 5px;
+    transition: .3s ease-in-out;
+
+}
+.login button:hover{
+    transition: .3s ease-in-out;
+    background-color: seagreen;
+    
+}
+.Registro{
+
+    display: none;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    height: 65vh;
+    margin-top: 2%;
+    background-color: #fff;
+    box-shadow: 0px 0px 5px 1px #d2d2d2;
+    margin: 4% auto;
+    border-radius: 5px;
+
+
+}
+.Registro input{
+    width: 70%;
+    height: 7vh;
+    outline: none;
+    border: 1px solid #000;
+    margin-top: 2%;
+    border-radius: 5px;
+    padding-left: 5%;
+}
+.Registro button{
+    width: 75%;
+    height: 7vh;
+    background-color: #1f1f1f;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+    margin-top: 2%;
+    border-radius: 5px;
+    border: none;
+}
+.Registro button:hover{
+    transition: .3s ease-in-out;
+    background-color: seagreen;
+
+}
+.Registro button:active{
+    background-color: #1f1f1f;
+    color: seagreen;
+}
+.ver{
+
+    display: none;
+    width: 80%;
+    height: 60vh;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px 1px #d2d2d2;
+    margin: 4% auto;
+    
+
+}
+.menu{
+    display: flex;
+    width: 100%;
+    height: 20%;
+    border-radius: 5px 5px 0px 0px;
+}
+.menu .l{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background-color: #1f1f1f;
+    color: #fff;
+    font-weight: bold;
+    width: 20%;
+    height: 100%;
+}
+.menu .l:first-child{
+    border-radius: 5px 0px 0px 0px;
+}
+.menu .l:last-child{
+    border-radius: 0px 5px 0px 0px;
+}
+.conteiner{
+
+    width: 100%;
+    height: 80%;
+    overflow: hidden;
+    overflow-y: scroll;
+
+}
+.conteiner::-webkit-scrollbar{
+    width: 0px;
+}
+.conteiner::-webkit-scrollbar-thumb{
+    width: 0px;
+}
+.dados{
+    display: flex;
+    width: 100%;
+    height: 20%;
+    background-color: #eee;
+}
+.dados li{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: 20%;
+    height: 100%;
+    font-weight: 500;
+
+}
+.dados:nth-child(even){
+
+    background-color: #d2d2d2;
+
+}
